@@ -12,10 +12,10 @@ Applikationen vänder sig främst till personer som gillar att spela spel. Det s
 Det finns såklart många Minesweeper-spel på marknaden. Bland annat har Windows själva ett standardspel förinstallerat på sina datorer. Minesweeper-spelet i sig är ett ganska enkelt spel och därför är det svårt att skapa något extra av det. Detta spel som jag skapar ska därför fokusera på att ge den bästa användarupplevelsen.
 
 ### Baskrav
-•	Kunna spela Minesweeper-spelet.
-•	Kunna spela på olika nivåer.
-•	Kunna spara sitt resultat.
-•	Kunna visa upp en topplista för varje nivå.
+*	Kunna spela Minesweeper-spelet.
+*	Kunna spela på olika nivåer.
+*	Kunna spara sitt resultat.
+*	Kunna visa upp en topplista för varje nivå.
 
 ### Teknik
 Eftersom detta projekt gör i en kurs där PHP ska användas har jag tvingat använda mig utav det språket. Applikationen följer MVC-principen. Även en databas används för att spara resultat. 
