@@ -50,8 +50,7 @@ class HighscoreView {
 		'<div id="highscoreBox">' . 
 			$nameString
 		 . '</div>
-		'
-		. $this->goBackToStart();
+		';
 	}
 
 	// Meny till topplista.
@@ -60,19 +59,9 @@ class HighscoreView {
 		return '<a class="linkButtonInline" href="?highscore=9">9x9</a>
 				<a class="linkButtonInline" href="?highscore=16">16x16</a>
 				<a class="linkButtonInline" href="?highscore=22">22x22</a>
+				<a class="linkButtonInline" href="?">Gå till startmenyn</a>
 				<br>
 				<br>
-				';
-	}
-
-	// "Tillbaka-knapp".
-	private function goBackToStart()
-	{
-		return '<br>
-				<br>
-				<a class="linkButton" href="?">
-					Gå till startmenyn
-				</a>
 				';
 	}
 

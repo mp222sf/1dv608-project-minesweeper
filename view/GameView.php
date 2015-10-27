@@ -87,6 +87,11 @@ class GameView {
 		else if (isset($_GET[self::$qsRules]))
 		{
 			return 	'<h2>Spelregler</h2>
+					<a class="linkButtonInline" href="?">
+						Gå till startmenyn
+					</a>
+					<br>
+					<br>
 					<div id="rulesBox">
 						Spelet går ut på att så fort som möjligt öppna alla minfria rutor i ett förutbestämt område av rutor. Under varje ruta finns ett av alternativen:<br>
 						<ol>
@@ -98,29 +103,29 @@ class GameView {
 					</div>
 					<br>
 					<br>
-					<a class="linkButton" href="?">
-						Gå till startmenyn
-					</a>';
+					';
 		}
 
 		// Annars får man tillbaka View för startsidan.
-		return '<form method="post">
-					<input class="greenButton" type="submit" name="' . self::$postSG9x9 . '" value="9x9, 10 minor" />
-					<br>
-					<input class="yellowButton" type="submit" name="' . self::$postSG16x16 . '" value="16x16, 40 minor" />
-					<br>
-					<input class="redButton" type="submit" name="' . self::$postSG22x22 . '" value="22x22, 99 minor" />
-					<br>
-					<br>
-					<br>
-					<a class="linkButtonInline" href="?' . self::$qsHighscore . '">
-						Topplistor
-					</a>
-					<a class="linkButtonInline" href="?' . self::$qsRules . '">
-						Spelregler
-					</a>
-					<br>
-				</form>';
+		return '<div id="startMenu">
+					<form method="post">
+						<input class="greenButton" type="submit" name="' . self::$postSG9x9 . '" value="9x9, 10 minor" />
+						<br>
+						<input class="yellowButton" type="submit" name="' . self::$postSG16x16 . '" value="16x16, 40 minor" />
+						<br>
+						<input class="redButton" type="submit" name="' . self::$postSG22x22 . '" value="22x22, 99 minor" />
+						<br>
+						<br>
+						<br>
+						<a class="linkButtonInline" href="?' . self::$qsHighscore . '">
+							Topplistor
+						</a>
+						<a class="linkButtonInline" href="?' . self::$qsRules . '">
+							Spelregler
+						</a>
+						<br>
+					</form>
+				</div>';
 	}
 
 	public function didUserPressStart9x9()
