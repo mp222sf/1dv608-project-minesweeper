@@ -21,6 +21,6 @@ Det finns såklart många Minesweeper-spel på marknaden. Bland annat har Window
 Eftersom detta projekt gör i en kurs där PHP ska användas har jag tvingat använda mig utav det språket. Applikationen följer MVC-principen. Även en databas används för att spara resultat. 
 
 ## Installation
-Ladda ner Repositoryn.
-Skapa en databas i MYSQL.
-Ändra inställningar i Settings.php-filen, samt ResultDAL.php-filen.
+1. Ladda ner Repositoryn.
+1. Skapa en databas i MYSQL.
+1. Ändra inställningar i Settings.php-filen, samt ResultDAL.php-filen.
